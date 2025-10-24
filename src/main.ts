@@ -1,25 +1,7 @@
-import './style.css'
+import { ctx, canvas, initCanvas } from "./canvas-ctx";
+import "./style.css";
 
+initCanvas();
 
-
-let canvas = document.querySelector<HTMLCanvasElement>("#main-game")!;
-let ctx = canvas.getContext("2d")!;
-
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-
-ctx.fillStyle = "purple"
+ctx.fillStyle = "purple";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-function onResize(){
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-console.log("resized window", canvas.width, canvas.height)
-
-}
-
-window.addEventListener("resized window" onResize)
-
-
-
-
