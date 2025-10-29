@@ -1,9 +1,9 @@
 export class Brick {
-  ctx: CanvasRenderingContext2D;
-  x: number;
-  y: number;
-  size: number = 100;
-  color: string = "green";
+  public ctx: CanvasRenderingContext2D;
+  public x: number;
+  public y: number;
+  public size: number = 100;
+  public color: string = "green";
 
   constructor(ctx: CanvasRenderingContext2D, x: number, y: number) {
     this.ctx = ctx;
